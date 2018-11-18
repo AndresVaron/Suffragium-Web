@@ -1,0 +1,15 @@
+<br>
+<div class="row text-center">
+    <div [class]="getCols()"></div>
+    <div [class]="getCol()">
+        <jqxChart #myChart
+            [width]="'100%'" [height]="getHeight()"
+            [title]="'Elecciones En Vivo'" [enableAxisTextAnimation]="false"
+            [description]="''" [animationDuration]="1000" [showToolTips]="false"
+            [showLegend]="false" [enableAnimations]="false" [padding]="padding"
+            [titlePadding]="titlePadding" [source]="data" [xAxis]="xAxis"
+            [valueAxis]="valueAxis" [seriesGroups]="seriesGroups" [colorScheme]="'scheme20'">
+    </jqxChart>
+    </div>
+<div [class]="getCols()"></div>
+</div>

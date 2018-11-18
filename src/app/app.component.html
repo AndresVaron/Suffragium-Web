@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" >
+            <div class="form-inline">
+                <img id="logo" src="../assets/Logo.png" class="center-block logo" style="width: 100%; height: auto;">
+            </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-top: 2%">
+            <div class="navbar-nav mx-auto mt-0">
+                <a id="authors-navbar-item" class="nav-item nav-link text-center" style="color:#160040;" routerLink="/candidatos/grafica">Resultados</a>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" style="color:#160040;">Mapas</a>
+                    <br>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" class="nav-item nav-link text-center" style="color:#160040;" routerLink="/mapas/municipios">Municipios</a>
+                        <div class="dropdown-divider" ></div>
+                        <a class="dropdown-item" class="nav-item nav-link text-center" style="color:#160040;" routerLink="/mapas/departamentos">Departamentos</a>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <router-outlet></router-outlet>
+        <br>
+        <br>
+
+    </div>
+    <footer class="footer bg-light" id="footer">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse">
+                    <div class=" mx-auto text-center">
+                        <img src="../assets/uniandes.png" alt="logo" width="8%" /><span id="footer-text" style="padding-right:5em">  ©2018 Suffragium</span>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</div>
