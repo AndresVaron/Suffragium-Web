@@ -1,8 +1,6 @@
 import {Component, OnInit, ViewChild, AfterViewInit, OnDestroy} from '@angular/core';
 import {jqxChartComponent} from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxchart';
 
-
-
 import {SuffragiumService} from '../../suffragium.service';
 
 @Component({

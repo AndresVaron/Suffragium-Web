@@ -14,7 +14,14 @@ export class SuffragiumService {
     constructor(private http: HttpClient) {}
 
     getResultados(todos: Boolean): Observable<Object[]> {
-        return this.http.get<Object[]>("http://157.253.238.75:80/Suffragium/api/resultados/candidatos?todos="+todos);
+        return this.http.get<Object[]>("http://157.253.238.75:8080/Suffragium/api/resultados/candidatos?todos=" + todos);
     }
 
+    getMunicipios(): Observable<Object[]> {
+        return this.http.get<Object[]>("http://157.253.238.75:8080/Suffragium/api/resultados/mapa/municipios");
+    }
+
+    getDepartamentos(): Observable<Object[]> {
+        return this.http.get<Object[]>("http://157.253.238.75:8080/Suffragium/api/resultados/mapa/departamentos");
+    }
 }
