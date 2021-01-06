@@ -8,7 +8,7 @@ import {AgmCoreModule} from '@agm/core';
     imports: [
         CommonModule,
         AgmCoreModule.forRoot({
-            apiKey: 'AIzaSyAbKGGFId6vb-FfOnHLEoxSGx68m3c06-Q'
+            apiKey: ''
         })
     ],
     declarations: [MapaMunicipiosComponent, MapaDepartamentosComponent]
